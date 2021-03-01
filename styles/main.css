@@ -1,0 +1,47 @@
+:root {
+  box-sizing: border-box;
+  font-size: 1rem;
+  --brand-accent: #fc6054;
+  --brand-dark: #0e3b52;
+  --brand-font: "Montserrat", sans-serif;
+}
+
+body * + * {
+  margin-top: 1.5em;
+  font-family: var(--brand-font);
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.content-wrap {
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#site-logo {
+  max-width: 200px;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--brand-dark);
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.accent-word {
+  color: var(--brand-accent);
+}
+
+.copy {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--brand-dark);
+  letter-spacing: 0.025rem;
+  line-height: 2em;
+}
