@@ -3,14 +3,17 @@
     padding: 0 3em;
   }
 
-  .hero-img {
-    max-width: 45%;
-    object-fit: contain;
-  }
-
   .content-wrap.hero {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-img {
+    right: -30%;
+    top: 5rem;
+    max-width: 75%;
   }
 }
 
