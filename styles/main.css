@@ -164,6 +164,7 @@ p {
 
 .content-wrap.main {
   padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .main-wrap {
@@ -251,6 +252,19 @@ aside {
 .time-location {
   font-size: var(--copy-font-size);
   color: var(--brand-gray);
+}
+
+.view-more-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.875rem;
+}
+
+.view-more {
+  font-size: var(--copy-font-size);
+  color: var(--brand-accent);
+  font-weight: 600;
 }
 
 /* Form Sidebar */
