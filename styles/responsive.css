@@ -68,6 +68,25 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .content-wrap.footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer-left p.time-location {
+    text-align: center;
+  }
+
+  .footer-right {
+    display: flex;
+    padding: 0 5rem;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+
+  .socials {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
