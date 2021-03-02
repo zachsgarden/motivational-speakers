@@ -74,9 +74,6 @@ nav {
 }
 
 /* Hero */
-section#hero {
-}
-
 .content-wrap.hero {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -253,4 +250,24 @@ aside {
 .form-pill a:nth-child(1) {
   background-color: var(--brand-accent);
   color: var(--brand-white);
+}
+
+/* Footer */
+.content-wrap.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right {
+  color: var(--brand-gray);
+}
+
+.socials {
+  margin-left: 1rem;
 }
