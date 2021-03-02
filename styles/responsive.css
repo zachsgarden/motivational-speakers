@@ -13,6 +13,16 @@
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .main-wrap {
+    flex-direction: column-reverse;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .hero-img {
     right: -30%;
@@ -49,9 +59,18 @@
     flex-direction: column;
     max-width: 100%;
   }
+
+  .card-wrap {
+    width: 100%;
+  }
+
+  .card-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .content-wrap {
     padding: 0 1.5rem;
   }
