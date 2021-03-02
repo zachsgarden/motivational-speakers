@@ -5,7 +5,7 @@
   --brand-accent: #fc6054;
   --brand-dark: #0e3b52;
   --brand-font: "Montserrat", sans-serif;
-  --copy-font-size: 0.7em;
+  --copy-font-size: 16px;
   --brand-white: #ffffff;
   --brand-gray: #909da6;
   --brand-light-gray: #babec1;
@@ -27,7 +27,7 @@ body {
 }
 
 .content-wrap {
-  max-width: 960px;
+  max-width: 1248px;
   margin: 0 auto;
 }
 
@@ -58,7 +58,7 @@ nav {
 }
 
 #site-logo {
-  max-width: 125px;
+  max-width: 220px;
 }
 
 .main-nav {
@@ -68,10 +68,10 @@ nav {
 
 .main-nav li {
   text-decoration: none;
-  font-weight: 600;
-  font-size: var(--copy-font-size);
+  font-weight: 700;
+  font-size: 14px;
   display: inline;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .main-nav li a.active {
@@ -90,15 +90,15 @@ nav {
 }
 
 .hero-img {
-  width: 600px;
+  /* width: 600px; */
   position: absolute;
-  top: 2.5rem;
-  right: -20%;
+  top: 4rem;
+  right: -39%;
 }
 
 h1 {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 62px;
+  font-weight: 700;
   letter-spacing: 0.025em;
   max-width: 90%;
   margin: 1.5rem 0 1rem;
@@ -343,4 +343,36 @@ aside {
 
 .socials {
   margin-left: 1rem;
+}
+
+/* Test */
+.r-pill-group {
+  background: var(--brand-white);
+  border: 2 px solid #eaeff2;
+  border-radius: 2em;
+  display: inline-block;
+  padding: 0.25em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.r-pill-item label {
+  border-radius: 2em;
+  border: 2px solid transparent;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.r-pill-item input:checked + label {
+  background-color: var(--brand-accent);
+  color: var(--brand-white);
+}
+
+input#r1,
+input#r2 {
+  display: none;
 }
