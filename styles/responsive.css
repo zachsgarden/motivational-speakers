@@ -4,7 +4,6 @@
   }
 
   .hero-img {
-    position: static;
     max-width: 45%;
     object-fit: contain;
   }
@@ -12,5 +11,25 @@
   .content-wrap.hero {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrap.nav {
+    flex-direction: column;
+    padding: 0.5rem 0;
+    align-items: center;
+  }
+
+  .hero-img {
+    left: 0;
+    opacity: 0.05;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
   }
 }
