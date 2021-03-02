@@ -15,7 +15,7 @@ body {
   color: var(--brand-dark);
   font-family: var(--brand-font);
   overflow-x: hidden;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
 }
 
 *,
@@ -31,6 +31,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 /* Navigation */
@@ -71,21 +75,32 @@ nav {
 
 /* Hero */
 section#hero {
+}
+
+.content-wrap.hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
 .hero-img {
   width: 600px;
   position: absolute;
-  top: 0;
-  right: -2%;
+  top: 2rem;
+  right: -20%;
 }
 
 h1 {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.025em;
   max-width: 90%;
+  margin: 1.5rem 0 1rem;
+  line-height: 1em;
+}
+
+p {
+  margin: 0 0 0.5rem;
 }
 
 .hero-content {
@@ -93,17 +108,39 @@ h1 {
 }
 
 /* Buttons */
+.button-row {
+  margin: 1rem 0;
+}
+
 .button {
   display: inline-block;
   font-size: var(--copy-font-size);
   font-weight: 600;
   padding: 1em 1.5em;
   border-radius: 3px;
+  margin-right: 1rem;
+  transition: 0.3s;
+}
+
+.button.accent:hover {
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
 }
 
 .button.accent {
   background-color: var(--brand-accent);
   color: var(--brand-white);
+}
+
+/* Fontawesome */
+.fas {
+  font-size: 1.2em;
+  margin: 0 0.5rem 0 0;
+}
+
+.fa-phone-alt {
+  color: var(--brand-accent);
 }
 
 .accent-word {
@@ -114,7 +151,7 @@ h1 {
   font-size: var(--copy-font-size);
   font-weight: 400;
   letter-spacing: 0.025rem;
-  line-height: 2em;
+  line-height: 1.7em;
 }
 
 /* Main-content */

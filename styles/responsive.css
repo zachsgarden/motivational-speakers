@@ -1,7 +1,16 @@
-@media only screen and (max-width: 1000px) {
-  .hero-img {
-    opacity: 0.2;
+@media only screen and (max-width: 1028px) {
+  .content-wrap {
+    padding: 0 3em;
   }
-  .overlay {
+
+  .hero-img {
+    position: static;
+    max-width: 45%;
+    object-fit: contain;
+  }
+
+  .content-wrap.hero {
+    display: flex;
+    justify-content: space-between;
   }
 }
