@@ -96,6 +96,12 @@ h1 {
   line-height: 1em;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
 p {
   margin: 0 0 0.5rem;
 }
@@ -154,6 +160,10 @@ p {
 /* Main-content */
 #main-content {
   background-color: #f0f2f4;
+}
+
+.content-wrap.main {
+  padding-top: 2rem;
 }
 
 .main-wrap {

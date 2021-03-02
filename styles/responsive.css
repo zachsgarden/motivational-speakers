@@ -7,13 +7,27 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .hero-img {
+    top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .hero-img {
     right: -30%;
-    top: 5rem;
+    top: 3.5rem;
     max-width: 75%;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-img {
+    top: 4rem;
   }
 }
 
