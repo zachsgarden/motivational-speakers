@@ -117,7 +117,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 40px;
   font-weight: 600;
   margin: 1rem 0;
 }
@@ -301,6 +301,10 @@ aside {
   font-weight: 600;
 }
 
+.view-more:visited {
+  color: var(--brand-accent);
+}
+
 /* Form Sidebar */
 .r-pill-group {
   background: var(--brand-white);
@@ -433,4 +437,10 @@ input.form-pill::placeholder {
 .range-wrap input {
   width: 100%;
   appearance: none;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --copy-font-size: 12px;
+  }
 }

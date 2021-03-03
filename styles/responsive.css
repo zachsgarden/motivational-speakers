@@ -45,15 +45,22 @@
     font-size: 48px;
   }
 
+  h3 {
+    font-size: 30px;
+  }
+
   .main-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   article {
     width: 100%;
+  }
+
+  aside {
+    width: 50%;
+    margin: 3rem auto;
   }
 
   .main-nav li {
@@ -76,6 +83,11 @@
   .hero-content {
     max-width: 50%;
   }
+
+  aside {
+    width: 100%;
+    margin: 3rem auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -85,6 +97,10 @@
 
   h1 {
     font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 }
 
