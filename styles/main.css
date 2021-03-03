@@ -325,7 +325,7 @@ aside {
   border: 2px solid transparent;
   display: block;
   padding: 0.5rem 2.3rem;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   font-weight: 600;
   transition: 0.3s;
@@ -354,8 +354,8 @@ input.search::placeholder {
 
 i.fas.fa-search {
   position: absolute;
-  top: 13px;
-  left: 11px;
+  top: 28px;
+  left: 15px;
   color: var(--brand-accent);
 }
 
