@@ -319,6 +319,10 @@ aside {
   cursor: pointer;
 }
 
+.search-wrap {
+  position: relative;
+}
+
 input.search {
   border: 1px solid var(--brand-light-gray);
   margin: 1rem 0;
@@ -373,6 +377,20 @@ select#locations {
   color: var(--brand-dark);
   font-weight: 700;
   font-size: var(--copy-font-size);
+}
+
+.form-pill {
+  border-radius: 2em;
+  border: 1px solid var(--brand-light-gray);
+  width: 100px;
+  padding: 0.7rem 0;
+}
+
+input.form-pill::placeholder {
+  font-size: var(--copy-font-size);
+  font-weight: 500;
+  color: var(--brand-gray);
+  font-family: var(--brand-font);
 }
 
 /* input.search {
