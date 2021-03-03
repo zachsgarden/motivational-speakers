@@ -342,7 +342,7 @@ input.search {
   margin: 1rem 0;
   padding: 0.7rem 2.5rem;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   border-radius: 2em;
   width: 100%;
@@ -407,103 +407,6 @@ input.form-pill::placeholder {
   font-family: var(--brand-font);
 }
 
-/* Range input */
-input[type="range"] {
-  -webkit-appearance: none;
-  width: 100%;
-  background: transparent;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type="range"]:focus {
-  outline: none;
-}
-
-input[type="range"]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background-color: var(--brand-white);
-  cursor: pointer;
-  margin-top: -8px;
-  box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.3);
-}
-
-input[type="range"]::-moz-range-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background-color: var(--brand-white);
-  cursor: pointer;
-  margin-top: -14px;
-  box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.9);
-}
-
-input[type="range"]::-ms-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background-color: var(--brand-white);
-  cursor: pointer;
-  margin-top: -14px;
-  box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.3);
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: var(--brand-accent);
-}
-
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: var(--brand-accent);
-}
-
-input[type="range"]::-moz-range-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: var(--brand-accent);
-}
-
-input[type="range"]::-ms-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: var(--brand-accent);
-  border-color: transparent;
-  color: transparent;
-}
-input[type="range"]::-ms-fill-lower {
-  background: var(--brand-accent);
-}
-input[type="range"]:focus::-ms-fill-lower {
-  background: var(--brand-accent);
-}
-input[type="range"]::-ms-fill-upper {
-  background: var(--brand-accent);
-}
-input[type="range"]:focus::-ms-fill-upper {
-  background: var(--brand-accent);
-}
-
-/* input.search {
-  border-radius: 2em;
-} */
-
 /* Footer */
 .content-wrap.footer {
   padding-top: 2rem;
@@ -529,10 +432,32 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 /* Slider */
-.range-wrap,
-.range-wrap input {
-  width: 100%;
-  appearance: none;
+div#range-slider {
+  height: 3px;
+  border: none;
+  background-color: var(--brand-gray);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: var(--brand-white) !important;
+  margin-top: -4px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+.ui-slider-horizontal .ui-slider-handle:focus {
+  border: none;
+}
+
+.ui-slider-range.ui-widget-header.ui-corner-all {
+  background: var(--brand-accent);
 }
 
 @media only screen and (max-width: 600px) {
