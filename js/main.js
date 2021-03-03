@@ -4,16 +4,15 @@ $(document).ready(function() {
       range: true,
       min: 0,
       max: 700,
-      values: [20, 500],
+      values: [60, 500],
       slide: function(event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        $("#amount").val(+ui.values[0] + " - " + ui.values[1]);
       }
     });
     $("#amount").val(
-      "$" +
-        $("#range-slider").slider("values", 0) +
-        " - $" +
-        $("#slider-range").slider("values", 1)
+      $("#range-slider").slider("values", 0) +
+        " - " +
+        $("#range-slider").slider("values", 1)
     );
   });
 });
