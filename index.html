@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/9b88d3ade2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <nav>
@@ -172,30 +175,41 @@
               </span>
             </div>
             <form action="">
-              <input type="text" class="form-pill" />
-              <label for="locations">Event Location:</label>
-              <select name="locations" id="locations">
-                <option value="atlanta">Atlanta</option>
-                <option value="nashville">Nashville</option>
-                <option value="">Mercedes</option>
-                <option value="audi">Audi</option> </select
-              ><br />
-              <label for="locations">Event Location:</label>
-              <select name="locations" id="locations">
-                <option value="atlanta">Atlanta</option>
-                <option value="nashville">Nashville</option>
-                <option value="">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <select name="locations" id="locations">
-                <option value="atlanta">Atlanta</option>
-                <option value="nashville">Nashville</option>
-                <option value="">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <label for="seat-cost">Seat Cost:</label>
-              <input type="text" class="form-pill" placeholder="min" />
-              <input type="text" class="form-pill" placeholder="max" />
+              <div class="search-wrap">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  class="search"
+                  placeholder="Search by name or location"
+                />
+              </div>
+              <div class="form-row">
+                <label for="locations">Event Location</label>
+                <select name="locations" id="locations">
+                  <option value="atlanta">Atlanta</option>
+                  <option value="nashville">Nashville</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="locations">Event Location</label>
+                <select name="locations" id="locations">
+                  <option value="atlanta">Atlanta</option>
+                  <option value="nashville">Nashville</option>
+                </select>
+                <select name="locations" id="locations">
+                  <option value="atlanta">Atlanta</option>
+                  <option value="nashville">Nashville</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="seat-cost">Seat Cost:</label>
+                <input type="text" class="form-pill" placeholder="min" />
+                <input type="text" class="form-pill" placeholder="max" />
+              </div>
+              <div class="range-wrap">
+                <input type="range" />
+              </div>
+              <input class="range-slider-demo" type="hidden" value="50" />
             </form>
           </aside>
         </div>

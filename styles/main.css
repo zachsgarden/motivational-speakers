@@ -149,7 +149,7 @@ p {
 
 /* Fontawesome */
 .fas {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 0 0.5rem 0 0;
 }
 
@@ -199,7 +199,7 @@ article {
 }
 
 aside {
-  width: 25%;
+  width: 30%;
 }
 
 /* Cards */
@@ -295,31 +295,89 @@ aside {
 }
 
 /* Form Sidebar */
-.form-pill {
-  background-color: var(--brand-white);
-
-  border: 1px solid var(--brand-light-gray);
-  border-radius: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.r-pill-group {
+  background: var(--brand-white);
+  border: 1 px solid var(--brand-light-gray);
+  border-radius: 2em;
+  display: inline-block;
+  padding: 0.25em;
+  width: 100%;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.form-pill a {
-  font-size: var(--copy-font-size);
+  justify-content: space-between;
   color: var(--brand-accent);
-  font-weight: 600;
-  border-radius: 19px;
-  padding: 0.5em 2em;
-  margin: 0.25em 0;
 }
 
-.form-pill a:nth-child(1) {
+.r-pill-item label {
+  border-radius: 2em;
+  border: 2px solid transparent;
+  display: block;
+  padding: 0.5rem 2.3rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input.search {
+  border: 1px solid var(--brand-light-gray);
+  margin: 1rem 0;
+  padding: 0.7rem 2.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 2em;
+  width: 100%;
+}
+
+input.search::placeholder {
+  color: var(--brand-light-gray);
+  font-family: var(--brand-font);
+}
+
+i.fas.fa-search {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  color: var(--brand-accent);
+}
+
+.r-pill-item input:checked + label {
   background-color: var(--brand-accent);
   color: var(--brand-white);
 }
+
+input#r1,
+input#r2 {
+  display: none;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+label {
+  font-size: var(--copy-font-size);
+  font-weight: 500;
+  color: var(--brand-gray);
+}
+
+select#locations {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid var(--brand-accent);
+  font-family: var(--brand-font);
+  color: var(--brand-dark);
+  font-weight: 700;
+  font-size: var(--copy-font-size);
+}
+
+/* input.search {
+  border-radius: 2em;
+} */
 
 /* Footer */
 .content-wrap.footer {
@@ -345,34 +403,9 @@ aside {
   margin-left: 1rem;
 }
 
-/* Test */
-.r-pill-group {
-  background: var(--brand-white);
-  border: 2 px solid #eaeff2;
-  border-radius: 2em;
-  display: inline-block;
-  padding: 0.25em;
+/* Slider */
+.range-wrap,
+.range-wrap input {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.r-pill-item label {
-  border-radius: 2em;
-  border: 2px solid transparent;
-  display: block;
-  padding: 0.5rem 1.5rem;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-
-.r-pill-item input:checked + label {
-  background-color: var(--brand-accent);
-  color: var(--brand-white);
-}
-
-input#r1,
-input#r2 {
-  display: none;
+  appearance: none;
 }
