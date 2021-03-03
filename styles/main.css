@@ -144,9 +144,9 @@ p {
 }
 
 .button.accent:hover {
-  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
 }
 
 .button.accent {
@@ -223,12 +223,13 @@ aside {
   -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.6);
   -webkit-transform: translate(0, -2px);
   -ms-transform: translate(0, -2px);
   transform: translate(0, -2px);
@@ -275,7 +276,7 @@ aside {
 
 .card-title {
   font-weight: 700;
-  font-size: 0.875em;
+  font-size: 18px;
   margin: 0.5em 0;
 }
 
@@ -319,6 +320,7 @@ aside {
 }
 
 .r-pill-item label {
+  color: var(--brand-accent);
   border-radius: 2em;
   border: 2px solid transparent;
   display: block;
