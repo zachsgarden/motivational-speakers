@@ -314,7 +314,7 @@ aside * {
 /* Form Sidebar */
 .r-pill-group {
   background: var(--brand-white);
-  border: 1 px solid var(--brand-light-gray);
+  border: 1px solid var(--brand-light-gray);
   border-radius: 2em;
   display: inline-block;
   padding: 0.25em;
@@ -344,7 +344,7 @@ aside * {
 input.search {
   border: 1px solid var(--brand-light-gray);
   margin: 1rem 0;
-  padding: 0.7rem 2.5rem;
+  padding: 0.9rem 2.5rem;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
